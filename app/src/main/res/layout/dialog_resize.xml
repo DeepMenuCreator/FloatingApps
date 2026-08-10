@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройка размера окна"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/bg_darker"
+        android:layout_marginBottom="16dp">
+
+        <View
+            android:id="@+id/previewBox"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/preview_box" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Предпросмотр"
+            android:textColor="@color/gray"
+            android:textSize="10sp"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="4dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvWidth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ширина: 800px"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp" />
+
+    <SeekBar
+        android:id="@+id/seekWidth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/accent"
+        android:thumbTint="@color/accent"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:id="@+id/tvHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Высота: 600px"
+        android:textColor="@color/white"
+        android:layout_marginBottom="4dp" />
+
+    <SeekBar
+        android:id="@+id/seekHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/accent"
+        android:thumbTint="@color/accent"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Отмена"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/gray_dark"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Применить"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/accent" />
+    </LinearLayout>
+
+</LinearLayout>

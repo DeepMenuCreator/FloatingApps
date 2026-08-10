@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/card_bg"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="App Name"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FreeForm окно"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLaunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Запуск"
+            android:textSize="12sp"
+            android:backgroundTint="@color/accent"
+            android:textColor="@color/white"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnResize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Размер"
+            android:textSize="12sp"
+            android:backgroundTint="@color/accent_dark"
+            android:textColor="@color/white"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            android:textSize="12sp"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
